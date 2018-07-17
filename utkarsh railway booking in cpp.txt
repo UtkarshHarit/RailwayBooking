@@ -1,0 +1,440 @@
+#include<iostream>
+using  namespace std;
+
+
+class destination
+{
+	int m;
+	public:
+	int x,ws;
+	string sss;
+	destination(){
+	}
+	int jaipur();
+	int agra();
+	int kota();
+	int ajmer();
+	int dosa();
+	int start();
+	int acnonac();
+	int traindetails(int x,int y,int z);
+	int userdetails();
+	int summery(int st);
+};
+
+
+int destination::jaipur() 
+{
+	
+	int b;
+	cout<<"\n\t\t\tDestination you can select are: \n";
+	cout<<"2.Agra\n";
+	cout<<"3.Kota\n";
+	cout<<"4.Ajmer\n";
+	cout<<"5.Dosa\n";
+	cin>>b;
+	if(b==1)
+	{
+		cout<<"/n wrong input\n";
+		return 0;
+	}
+	else
+	{
+	cout<<"\n\t\t\tDestination you have selected is :"<<b<<"\n";
+	return b;
+	}
+}
+
+
+int destination::agra()
+{
+	int b;
+	cout<<"\n\t\t\tDestination you can select are: \n";
+	cout<<"1.Jaipur\n";
+	cout<<"3.Kota\n";
+	cout<<"4.Ajmer\n";
+	cout<<"5.Dosa\n";
+	cin>>b;
+	if(b==2)
+	{
+		cout<<"/n wrong input\n";
+		return 0;
+	}
+	else
+	{
+	cout<<"\n\t\t\tDestination you have selected is :"<<b<<"\n";
+	return b;
+	}
+}
+
+
+int destination::kota()
+{
+	int b;
+	cout<<"\n\t\t\tDestination you can select are: \n";
+	cout<<"1.Jaipur\n";
+	cout<<"2.Agra\n";
+	cout<<"4.Ajmer\n";
+	cout<<"5.Dosa\n";
+	cin>>b;
+	if(b==3)
+	{
+		cout<<"/n wrong input\n";
+		return 0;
+	}
+	else
+	{
+	cout<<"\n\t\t\tDestination you have selected is :"<<b<<"\n";
+	return b;
+	}
+}
+
+int destination::ajmer()
+{
+	int b;
+	cout<<"\n\t\t\tDestination you can select are: \n";
+	cout<<"1.Jaipur\n";
+	cout<<"2.Agra\n";
+	cout<<"3.Kota\n";
+	cout<<"5.Dosa\n";
+	cin>>b;
+	if(b==4)
+	{
+		cout<<"/n wrong input\n";
+		return 0;
+	}
+	else
+	{
+	cout<<"\n\t\t\tDestination you have selected is :"<<b<<"\n";
+	return b;
+	}
+}
+
+int destination::dosa()
+{
+	int b;
+	cout<<"\n\t\t\tDestination you can select are: \n";
+	cout<<"1.Jaipur\n";
+	cout<<"2.agra\n";
+	cout<<"3.kota\n";
+	cout<<"4.ajmer\n";
+	cin>>b;
+	if(b==5)
+	{
+		cout<<"/n wrong input\n";
+		return 0;
+	}
+	else
+	{
+	cout<<"\n\t\t\tDestination you have selected is :"<<b<<"\n";
+	return b;
+	}
+}
+
+
+int destination::start()
+{
+	int y;
+	cout<<"\tProceed with Selecting departure point\n\n";
+	cout<<"1.Jaipur\n";
+	cout<<"2.Agra\n";
+	cout<<"3.Kota\n";
+	cout<<"4.Ajmer\n";
+	cout<<"5.Dosa\n";
+	
+		cin>>y;
+	
+	return y;
+}
+
+
+
+int destination::acnonac()
+{
+	int v;
+	cout<<"1=AC\n";
+	cout<<"2=non Ac\n";
+	cin>>v;
+	if(v==1)
+	cout<<"\n\t\t\tAc train is seleted\n \n";
+	else if(v==2)
+	cout<<"\n\t\t\tNON AC train is selected\n\n";
+	return v;
+	
+}
+
+
+int destination::traindetails(int s,int h,int o)
+{
+	cout<<"You have selected \ndeparture position as:"<<s<<"\ndestination as:"<<h<<"\nclass as"<<o<<"\n";
+	cout<<"According to your selection trains available are:\n\n\t\t\t";
+
+	int w,ss;
+		if(s==1)
+		{
+					cout<<"1.express train 1\t\t10:00am\t\t150Rs/person\n";
+					cout<<"2.express train 2\t\t14:00am\t\t250Rs/person\n";
+					cout<<"3.express train 3\t\t17:00am\t\t350Rs/person\n";
+cout<<"Enter the train no\n";
+						cin>>ss;
+						if(ss==1)
+						{
+						ws=1;
+						}
+
+						if(ss==2)
+						{
+						ws=2;
+						}
+
+						if(ss==3)
+						{
+						ws=3;
+						}
+
+		}
+		else if(s==2)
+		{
+					cout<<"1.express train 1\t\t20:00am\t\t378Rs/person\n";
+					cout<<"2.express train 2\t\t12:00am\t\t369Rs/person\n";
+					cout<<"3.express train 3\t\t21:00am\t\t696Rs/person\n";
+cout<<"Enter the train no\n";
+						cin>>ss;
+						if(ss==1)
+						{
+						ws=4;
+						}
+
+						if(ss==2)
+						{
+						ws=5;
+						}
+
+						if(ss==3)
+						{
+						ws=6;
+						}
+		}			
+
+	
+		else if (s==3)
+		{
+					cout<<"1.express train 1\t\t11:00am\t\t376Rs/person\n";
+					cout<<"2.express train 2\t\t19:00am\t\t399Rs/person\n";
+					cout<<"3.express train 3\t\t18:00am\t\t308Rs/person\n";
+cout<<"Enter the train no\n";
+						cin>>ss;
+						if(ss==1)
+						{
+						ws=7;
+						}
+
+						if(ss==2)
+						{
+						ws=8;
+						}
+
+						if(ss==3)
+						{
+						ws=9;
+						}
+		}
+
+		else if(s==4)
+		{
+					cout<<"1.express train 1\t\t17:00am\t\t200Rs/person\n";
+					cout<<"2.express train 2\t\t16:00am\t\t300Rs/person\n";
+					cout<<"3.express train 3\t\t15:00am\t\t400Rs/person\n";
+cout<<"Enter the train no\n";
+						cin>>ss;
+						if(ss==1)
+						{
+						ws=10;
+						}
+
+						if(ss==2)
+						{
+						ws=11;
+						}
+
+						if(ss==3)
+						{
+						ws=12;
+						}
+		}
+
+		else if(s==5)
+		{
+					cout<<"1.express train 1\t\t19:00am\t\t400Rs/person\n";
+					cout<<"2.express train 2\t\t15:00am\t\t450Rs/person\n";
+					cout<<"3.express train 3\t\t14:00am\t\t350Rs/person\n";
+
+						cin>>ss;
+						if(ss==1)
+						{
+						ws=13;
+						}
+
+						if(ss==2)
+						{
+						ws=14;
+						}
+
+						if(ss==3)
+						{
+						ws=15;
+						}
+		}
+	
+	
+	
+}
+
+
+int destination::userdetails()
+{
+	string a;
+	int b;
+	cout<<"\nEnter user name\n"<<a;
+	cin>>a;
+	cout<<"\n\nHello "<<a<<"\n";
+	cout<<"Enter user contact no\n";
+	cout<<"We will confirm your booking through your contact no\n";
+	cin>>b;
+	sss=a;
+}
+
+
+int destination::summery(int st)
+{
+	int aa,ab;
+	aa=st;
+	cout<<"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"<<"Hey "<<sss<<"\n";
+	cout<<"\t\tSummary\n\n";
+	cout<<"no of seates selected are: "<<aa<<"\n";
+
+
+
+
+
+
+int sss;
+if(ws==1)
+sss=150;
+else if(ws==2)
+sss=250;
+else if(ws==3)
+sss=250;
+else if(ws==4)
+sss=250;
+else if(ws==5)
+sss=250;
+else if(ws==6)
+sss=250;
+else if(ws==7)
+sss=250;
+else if(ws==8)
+sss=250;
+else if(ws==9)
+sss=250;
+else if(ws==10)
+sss=250;
+else if(ws==11)
+sss=250;
+else if(ws==12)
+sss=250;
+else if(ws==13)
+sss=250;
+else if(ws==14)
+sss=250
+;else if(ws==15)
+sss=250;
+
+
+
+
+
+
+
+
+
+
+	ab=aa*sss;
+	cout<<"Total billing amount is:  "<<ab<<"\n";
+	cout<<"Total no of seates booked are"<<aa<<"\n";
+	cout<<"Thanx for using our service\n\n\n\n\n\n\n\n\n";
+}
+
+
+int main()
+{
+	cout<<"\t\t\tWelcome to Anand Railways\n\n\n\n";
+	int a;
+	destination n;
+//Starting of the program
+	cout<<"Enter 1 to continue\n";
+	cin>>a;
+	if(a=1)
+		{
+		cout<<"Loading.................... \n loading.......................\n\n";
+		}
+	else
+	{
+		cout<<"Thanx for your support";
+		return 0;
+	}
+	
+//Selection of starting point
+	int m,y;
+	y=n.start();
+//selecting the destination
+	if(y==1)
+		m=n.jaipur();
+	else if(y==2)
+		m=n.agra();
+	else if(y==3)
+		m=n.kota();
+	else if(y==4)
+		m=n.ajmer();
+	else if(y==5)
+		m=n.dosa();
+	else
+		cout<<"Wrong input\n\n";
+//check for the right input
+		if(m==0)
+		{
+				return 0;
+		}
+//select the type of train from ac and non ac
+	cout<<"\n\t\t\tselect the type of train\n";
+	int v;
+	v=n.acnonac();
+//check for the user input
+
+	if(v==1||v==2)
+	{	
+		cout<<"proceeding\n";
+	}
+	else
+	{
+		cout<<"Wrong input\n";
+	}
+
+	cout<<"Loading..............\n loading..................\n\n";
+	cout<<"\n\t\t\tTrain details are\n";
+int f;
+//train details
+f=n.traindetails(y,m,v);
+//no of seates
+int aa,ab;
+cout<<"\n\t\t\tEnter no of seats\n\n";
+cin>>aa;
+
+//user details
+n.userdetails();
+
+n.summery(aa);
+
+
+
+}
